@@ -1,0 +1,26 @@
+{
+  "name": "innoboxrr-route-resolver",
+  "version": "1.0.0",
+  "description": "Resuelve las rutas generadas por el paquete de laravel route-to-json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innoboxrr/route-resolver.git"
+  },
+  "keywords": [
+    "route",
+    "json",
+    "laravel",
+    "resolve",
+    "vue"
+  ],
+  "author": "Homero Raul Vargas Cruz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/innoboxrr/route-resolver/issues"
+  },
+  "homepage": "https://github.com/innoboxrr/route-resolver#readme"
+}

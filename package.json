@@ -4,7 +4,8 @@
   "description": "Resuelve las rutas generadas por el paquete de laravel route-to-json",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/innoboxrr/route-resolver/issues"
   },
-  "homepage": "https://github.com/innoboxrr/route-resolver#readme"
+  "homepage": "https://github.com/innoboxrr/route-resolver#readme",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "sideEffects": false,
+  "devDependencies": {
+    "jsdom": "^25.0.0",
+    "vitest": "^3.0.0"
+  }
 }

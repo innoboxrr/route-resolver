@@ -36,3 +36,34 @@ Generate the manifest with `php artisan routes:json` on the Laravel side.
 ---
 
 Part of [Innobox R&R](https://github.com/innoboxrr) — 52 open-source packages extracted from production work. **[innobox.systems](https://innobox.systems)**
+
+## Parametros
+
+```js
+route('api.deals.deal.index')                  // sin parametros
+route('api.deals.deal.show', 7)                // posicional
+route('api.deals.deal.show', { id: 7 })        // nombrado
+route('api.deals.deal.index', { page: 2 })     // lo que sobra va al query string
+route('api.deals.deal.index', { ids: [1, 2] }) // ids[]=1&ids[]=2
+```
+
+Un parametro opcional (`{tags?}` en la URI) se omite si no recibe valor.
+Un parametro obligatorio ausente lanza en lugar de dejar `undefined` en la URL.
+
+## Host
+
+Por defecto se usa `location.host`, que incluye el puerto. Se puede fijar:
+
+```js
+setBaseUrl('api.ejemplo.test')  // fija el host
+setBaseUrl()                    // vuelve al del navegador
+```
+
+## Modo estricto
+
+```js
+setStrict(true)  // una ruta desconocida lanza en lugar de devolver undefined
+```
+
+Por defecto esta desactivado, para no cambiar el comportamiento de las
+aplicaciones que ya lo toleran. Conviene activarlo en los tests.

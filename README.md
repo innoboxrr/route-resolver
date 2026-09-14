@@ -31,7 +31,7 @@ Your SPA should not know that a profile lives at `/users/:id/profile`. It should
 npm install innoboxrr-route-resolver
 ```
 
-Generate the manifest with `php artisan routes:json` on the Laravel side.
+Generate the manifest with `php artisan route:json` on the Laravel side ([innoboxrr/routes-to-json](https://github.com/innoboxrr/routes-to-json)). Full documentation of the ecosystem, in Spanish and English: <https://innoboxrr.github.io/docs/interfaz/http-rutas-i18n>.
 
 ---
 
